@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en" class="js wf-newsgothicstd-n4-active wf-poynteroldstyledisplaycon-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+		<title>Animating SVG Text on a Path | Codrops</title>
+		
+
+		
+		
+		
+		
+		</script><script src="./Animating SVG Text on a Path _ Codrops_files/webfont.js.téléchargement"></script>
+				
+		<svg class="hidden">
+			<defs>
+				<filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+					<fegaussianblur stdDeviation="6.178879630169831e-110" result="blur" data-min-deviation="0" data-max-deviation="10"></fegaussianblur>
+					<femerge>
+						<femergenode in="blur"></femergenode>
+					</femerge>
+				</filter>
+				<filter id="blur2" x="-30%" y="-30%" width="160%" height="160%">
+					<fegaussianblur in="SourceAlpha" stdDeviation="1.8536638890509495e-100" result="glow" data-min-deviation="0" data-max-deviation="30"></fegaussianblur>
+					<fecolormatrix result="bluralpha" type="matrix" values="0 -1 0 0 0 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1.8 0 "></fecolormatrix>
+					<feoffset in="bluralpha" dx="0.000000" dy="0.000000" result="offsetBlur"></feoffset>
+					<femerge>
+						<femergenode in="offsetBlur"></femergenode>
+						<femergenode in="SourceGraphic"></femergenode>
+					</femerge>
+				</filter>
+				
+			</defs>
+		</svg>
+		
+			
+			
+			
+			<svg class="svgtext svgtext--1" data-filter-type="blur" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 200">
+				<path id="text-curve1" d="M 0 100 Q 250 200 500 100 Q 750 0 1000 100" fill="none"></path>
+				<text filter="url(#blur2)">
+					<textpath href="#text-curve1" startOffset="0">
+						You may think I’m small, but I have a universe inside my mind.
+					</textpath>
+				</text>
+			</svg>
+			<svg class="svgtext" data-filter-type="blur" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 200">
+				<path id="text-curve1" d="M 0 100 Q 250 0 500 100 Q 750 200 1000 100" fill="none"></path>
+				<text filter="url(#blur2)">
+					<textpath href="#text-curve1" startOffset="0">
+						Dn't forget about the stardust. Don't forget about the quartz rocks in the woods.
+					</textpath>
+				</text>
+			</svg>
+
+			<svg class="svgtext" data-filter-type="blur" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 200">
+				<path id="text-curve11" d="M 0 100 Q 250 0 500 100 Q 750 200 1000 100" fill="none"></path>
+				<text filter="url(#blur2)">
+					<textpath href="#text-curve11" startOffset="166.1008710148429">
+						Don't forget about the stardust. Don't forget about the quartz rocks in the woods.
+					</textpath>
+				</text>
+			</svg>
+
+
+			<svg class="svgtext svgtext--1" data-filter-type="blur" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 200">
+				<path id="text-curve1" d="M 0 100 Q 250 200 500 100 Q 750 0 1000 100" fill="none"></path>
+				<text filter="url(#blur)">
+					<textpath href="#text-curve1" startOffset="-123.82106296499643">
+						You may think I’m small, but I have a universe inside my mind.
+					</textpath>
+				</text>
+			</svg>
+			<svg class="svgtext" data-filter-type="blur" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 200">
+				<path id="text-curve11" d="M 0 100 Q 250 0 500 100 Q 750 200 1000 100" fill="none"></path>
+				<text filter="url(#blur2)">
+					<textpath href="#text-curve11" startOffset="166.1008710148429">
+						Don't forget about the stardust. Don't forget about the quartz rocks in the woods.
+					</textpath>
+				</text>
+			</svg>
+			
+		
+		<script src="./Animating SVG Text on a Path _ Codrops_files/js.464d568e.js.téléchargement"></script>
+	
+
+</body></html>
